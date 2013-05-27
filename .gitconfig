@@ -3,7 +3,6 @@
 	email = goodman.danny@gmail.com
 [github]
 	user = dgboy2000
-	token = 78dd5b621559271fbf8c46971af00164
 [alias]
   ci = commit
   co = checkout
