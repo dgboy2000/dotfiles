@@ -1,3 +1,6 @@
 export EDITOR="/usr/local/bin/mate -w"
 
-export PATH=$PATH:/usr/local/mysql/bin
+MYSQL_HOME=/usr/local/mysql
+export PATH=$PATH:$MYSQL_HOME/bin
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:$MYSQL_HOME/include
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$MYSQL_HOME/include
