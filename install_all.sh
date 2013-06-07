@@ -1,0 +1,1 @@
+cp .bash_aliases .bash_common .gitconfig .vimrc ~
