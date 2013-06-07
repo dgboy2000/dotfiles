@@ -5,4 +5,7 @@ export PATH=$PATH:$MYSQL_HOME/bin
 export C_INCLUDE_PATH=$C_INCLUDE_PATH:$MYSQL_HOME/include
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$MYSQL_HOME/include
 
+# Macports
 export PATH=/opt/local/bin:$PATH
+
+export PATH=$PATH:/usr/local/sbin
