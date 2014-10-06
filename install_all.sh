@@ -8,13 +8,21 @@ else
   cp .gitconfig ~/.gitconfig
 fi
 
+# Create blank .bash_profile
+if [ -f ~/.bash_profile ]
+then
+  echo "~/.bash_profile already exists"
+else
+  echo "Creatting ~/.bash_profile" && touch ~/.bash_profile
+fi
+
 # Install .bash_aliases and .bash_common
 (cat ~/.bash_profile | grep .bash_aliases || echo "
 if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
-fi" >> ~/.bash_profile) >> /dev/null
+fi" >> ~/.bash_profile) >> /dev/null 2>&1
 
 (cat ~/.bash_profile | grep .bash_common || echo "
 if [ -f ~/.bash_common ]; then
 . ~/.bash_common
-fi" >> ~/.bash_profile) >> /dev/null
+fi" >> ~/.bash_profile) >> /dev/null 2>&1
