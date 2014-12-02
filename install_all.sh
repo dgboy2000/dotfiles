@@ -1,5 +1,7 @@
 cp .bash_aliases .bash_common .vimrc ~
 
+SIGNATURE="# Created by https://github.com/dgboy2000/dotfiles"
+
 # Only install gitconfig if one does not exist
 if [ -f ~/.gitconfig ]
 then
@@ -26,3 +28,7 @@ fi" >> ~/.bash_profile) >> /dev/null 2>&1
 if [ -f ~/.bash_common ]; then
 . ~/.bash_common
 fi" >> ~/.bash_profile) >> /dev/null 2>&1
+
+# Turn off beep on tab-completion
+touch ~/.inputrc
+echo "set bell-style none $SIGNATURE" >> ~/.inputrc

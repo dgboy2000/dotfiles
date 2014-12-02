@@ -4,6 +4,7 @@ MYSQL_HOME=/usr/local/mysql
 export PATH=$PATH:$MYSQL_HOME/bin
 export C_INCLUDE_PATH=$C_INCLUDE_PATH:$MYSQL_HOME/include
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$MYSQL_HOME/include
+export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$MYSQL_HOME/lib
 
 # Macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
