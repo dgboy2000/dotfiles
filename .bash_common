@@ -1,5 +1,6 @@
 export EDITOR="/usr/local/bin/mate -w"
 
+# MySQL
 MYSQL_HOME=/usr/local/mysql
 export PATH=$PATH:$MYSQL_HOME/bin
 export C_INCLUDE_PATH=$C_INCLUDE_PATH:$MYSQL_HOME/include
@@ -7,6 +8,10 @@ export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$MYSQL_HOME/include
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$MYSQL_HOME/lib
 
 # Macports
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+PORT_HOME=/opt/local
+export PATH=$PORT_HOME/bin:$PORT_HOME/sbin:$PATH
+export C_INCLUDE_PATH=$PORT_HOME/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=$PORT_HOME/include:$CPLUS_INCLUDE_PATH
+export DYLD_LIBRARY_PATH=$PORT_HOME/lib:$DYLD_LIBRARY_PATH
 
 export PATH=$PATH:/usr/local/sbin
