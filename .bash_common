@@ -18,6 +18,9 @@ export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$MYSQL_HOME/lib
 # export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$PORT_HOME/include
 # # export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:/usr/lib:$PORT_HOME/lib
 
+# Homebrew
+export $PATH=/usr/local/bin:$PATH
+
 # CUDA
 CUDA_HOME=/Developer/NVIDIA/CUDA-6.5
 export PATH=$PATH:$CUDA_HOME/bin
