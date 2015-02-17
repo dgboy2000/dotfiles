@@ -28,6 +28,11 @@ export C_INCLUDE_PATH=$C_INCLUDE_PATH:$CUDA_HOME/include
 export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$CUDA_HOME/include
 export DYLD_LIBRARY_PATH=$DYLD_LIBRARY_PATH:$CUDA_HOME/lib
 
+# Look at man pages in preview: http://www.devopsderek.com/blog/2013/03/10/view-man-pages-with-preview-on-mac-os-x/
+pman() {
+    man -t ${@} | open -f -a /Applications/Preview.app/
+}
+
 # sudo env setup?
 
 export PATH=$PATH:/usr/local/sbin
