@@ -1,23 +1,12 @@
-alias ai='ssh -X degoodm@ai.stanford.edu'
-alias corn='ssh -X degoodm@corn.stanford.edu'
+CODE_HOME=$HOME/Documents/code
+
+alias code="cd $CODE_HOME"
 alias csd='git push && cap staging deploy'
-alias ecp='cd ~/Sites/ecp/segmentation-svm'
-alias dotfiles='cd ~/Sites/config/dotfiles'
+alias dotfiles="cd $CODE_HOME/config/dotfiles"
 alias fixtures='rake db:fixtures:load'
 alias gp='git commit -am "progress commit" && git push'
 alias gbm='git merge --no-ff'
 alias gsr='git stash save && git review -R `git rev-parse --abbrev-ref HEAD` && git stash pop'
-alias mm='cd ~/Sites/metamind'
-alias myth='ssh -X degoodm@myth.stanford.edu'
-alias ow='cd ~/Sites/consulting/ow/aia'
+alias ow='cd $CODE_HOME/consulting/ow/aia'
 alias rdbm='rake db:migrate && rake db:test:prepare && rake db:fixtures:load'
-alias staging='ssh deploy@www.planestats.com'
 
-: '
-DORMANT ALIASES
-alias bem='cd /Users/dannygoodman/Desktop/SideIdeas/Consulting/BrandEquityMedia'
-alias kaggle='cd ~/Sites/kaggle/online-sales/'
-alias mogro='cd ~/Sites/consulting/mogro/mogro'
-alias rentlingo='cd ~/Sites/consulting/rentlingo/rentlingo'
-alias spl='cd ~/Sites/cs228'
-'
